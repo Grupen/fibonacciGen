@@ -1,16 +1,17 @@
 
-public class Main {
+import java.math.BigInteger;
+public class App {
 	public static void main(String[] args)
 	{
-		long first = 0;
-		long second = 1;
-		long third = 1;
+		BigInteger first = BigInteger.valueOf(0);
+		BigInteger second = BigInteger.valueOf(1);
+		BigInteger third = BigInteger.valueOf(1);
 		int counter = 4;
-		for(int i=0; i<90;i++){
+		for(int i=0; i<900000;i++){
 			
 			first=second;
 			second=third;
-			third=first+second;
+			third = first.add(second);
 			System.out.println(third);
 			System.out.println(counter+": ");
 			counter++;
